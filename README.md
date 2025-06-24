@@ -1,12 +1,13 @@
 ## Initial Commit:
 - Fixed files and working router.
 - Has the `public` folder as the main entry point.
-
-## Next Updates:
 - Forms for Log In and Sign Up
 - Database Schema
+
+## Next Updates:
 - Database Connection
+- Authenticator and Validator functions
 
 ## More additions:
 - CRUD for Expenses
-- Authenticator and Validator functions
+- Email/SMS for Two-Factor Authentication

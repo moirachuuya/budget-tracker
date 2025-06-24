@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 // Makes files accessible from the public directory
 const BASE_PATH = __DIR__ . '/../';
 
