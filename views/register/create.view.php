@@ -26,6 +26,12 @@
         </label>
         <br><br>
 
+        <label for="username">
+            Username:<br>
+            <input type="text" name="username" id="username" required>
+        </label>
+        <br><br>
+
         <label for="email">
             Email:<br>
             <input type="email" name="email" id="email" required>
@@ -37,14 +43,24 @@
 
         <label for="phone_number">
             Phone Number:<br>
-            <input type="tel" name="phone_number" id="phone_number" required>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="eg. 09XXXXXXXXX" required>
         </label>
+            <?php if(isset($errors['phone_number'])): ?>
+                <p style="color:red; font-family:'Arial'; font-size: 10px;"><?=$errors['phone_number']?></p>
+            <?php endif; ?>
         <br><br>
 
         <label for="password">
             Password:<br>
             <input type="password" name="password" id="password" required>
         </label>
+            <?php if(isset($errors['password'])): ?>
+                <?php foreach($errors['password'] as $error): ?>
+                    <p style="color:red; font-family:'Arial'; font-size: 10px;">
+                        <?= htmlspecialchars($error) ?>
+                    </p>
+                <?php endforeach; ?>
+            <?php endif; ?>
         <br><br>
 
         <label for="confirm_password">

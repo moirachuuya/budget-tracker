@@ -1,20 +1,17 @@
-## Updates for Commit #2:
-- Created a `BaseValidator` class to validate a few input fields. 
-    - Might just be for Strings/Expenses in the future, for now it contains *Email* and *Password* methods.
-- The *Password* method within `BaseValidator` is to be moved and made into it's own class, within the `Validator` directory.
-- Composer (Autoloading) was implemented.
+## Updates for Commit #3:
+- Added the `Password` validator class, and refactored it.
+- Added a *Username* field for future use (e.g., adding friends, user handles, etc.)
 
 ## Next Updates:
-- Database Connection
-- Authenticator and (more) Validator functions
+- [ ] Username validator class
+- [ ] Database connection
+- [ ] Authenticator and additional Validator functions
 
 ## More additions:
 - CRUD for Expenses
 - Email/SMS for Two-Factor Authentication
-- Autoloader from Composer
 
 # Project Summary:
-- Laravel-style naming
-- Logic came from Laracasts' PHP for Beginners course, with a couple of tweaks.
-    - Separate Validators for Password and Username.
+- Laravel-inspired file structure and validation style.
+- Built on concepts from Laracasts' PHP for Beginners course, extended with custom validators and a modular structure.
 - I wanted a *To-do list* style app but a bit more niche haha.
