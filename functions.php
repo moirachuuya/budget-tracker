@@ -5,6 +5,7 @@ function dd($value){
     die();
 }
 
-function view($value){
+function view($value, $attributes = []){
+    extract($attributes);
     require 'views/' . $value;
 }

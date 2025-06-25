@@ -12,7 +12,7 @@ function routeToController($uri, $routes){
     if(array_key_exists($uri, $routes)){
         require $routes[$uri]; 
     } else {
-        throw new Exception(); // Write an abort function for this in the future haha
+        throw new Exception('Route not found'); // Write an abort function for this in the future haha
     }
 }
 

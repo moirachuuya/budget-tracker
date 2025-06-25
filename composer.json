@@ -1,0 +1,9 @@
+{
+    "name": "moirachels/budget-tracker",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/"
+        }
+    }
+}

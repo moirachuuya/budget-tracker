@@ -22,7 +22,7 @@
 
         <label for="last_name">
             Last Name:<br>
-            <input type="text" name="middle_name" id="last_name" required>
+            <input type="text" name="last_name" id="last_name" required>
         </label>
         <br><br>
 
@@ -30,6 +30,9 @@
             Email:<br>
             <input type="email" name="email" id="email" required>
         </label>
+            <?php if(isset($errors['email'])): ?>
+                <p style="color:red; font-family:'Arial'; font-size: 10px;"><?=$errors['email']?></p>
+            <?php endif; ?>
         <br><br>
 
         <label for="phone_number">
