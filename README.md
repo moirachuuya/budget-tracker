@@ -1,9 +1,5 @@
-## Updates for Commit #4:
-- Added *hasNoSpaces* method in the BaseValidator for usernames and password.
-- Added functions for `names()` for the first few input fields.
-- Added *block paste* for the confirm password input field to ensure that the user will type it.
-- Added the `Username` validator class!
-- All input fields (except for `confirm_password` are validated)
+## Updates for Commit #5:
+- Fixed logic errors
 
 ## Next Updates:
 - [ ] Work on `confirm_password` (Figure out the logic)

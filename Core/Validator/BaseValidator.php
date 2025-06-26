@@ -17,15 +17,15 @@ class BaseValidator{
     }
     public static function max($value, $max = INF){
         $value = trim($value);
-        return strlen($value) > $max;
+        return strlen($value) <= $max;
     }
 
     public static function hasNoSpaces($value){
         return !preg_match('/\s/', $value);
     }
 
-    public static function onlyAscii($value){
-        return preg_match('/^[a-zA-Z0-9_.-]+$/', $value);
+    public static function hasInvalidChars($value){
+        return !preg_match('/^[a-zA-Z0-9_.-]+$/', $value);
     }
 
     public static function startsWithUppercaseLetter($value){

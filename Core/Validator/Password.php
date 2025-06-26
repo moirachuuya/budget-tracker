@@ -30,7 +30,7 @@ class Password{
             if(! Password::hasNumber($password)){ $errors['password'][] = "Password must contain a number.";}
             if(! Password::hasSpecialChar($password)){ $errors['password'][] = "Password must contain at least one special character." ;}
             if(! BaseValidator::hasNoSpaces($password)){$errors['password'][] = "Password must not contain spaces.";}
-            if(! BaseValidator::onlyAscii($password)){$errors['password'][] = "Password can only contain letters, numbers, and special characters";}
+            if(! BaseValidator::hasInvalidChars($password)){$errors['password'][] = "Password can only contain letters, numbers, and special characters";}
 
         return $errors['password'] ?? [];
         }
